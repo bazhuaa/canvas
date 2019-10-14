@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    #wonder{
+      position:fixed;
+      top:0;
+      left: 0;
+      z-index: -1;
+      background-color: black;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <div id="wonder"></div>
+</body>
+<script src="index.js"></script>
+<script>
+  new Wonder({
+    el:'#wonder',
+    dotsNumber:10,
+    lineMaxLength:250,
+    dotsAlpha:.5,
+    speed:1.5,
+    clickWithDotsNumber:2
+  })
+</script>
+</html>
